@@ -1,0 +1,240 @@
+# build products...
+*.py[co]
+build
+AUTHORS.TXT
+# Emacs backup and autosave files...
+*~
+.\#*
+\#*
+# RPM stuff...
+MANIFEST
+dist
+rpm-build
+# Eclipse/PyDev stuff...
+.project
+.pydevproject
+# PyCharm stuff...
+.idea
+#IntelliJ IDEA stuff..
+*.iml
+#VSCode stuff..
+.vscode/
+# Mac OS X stuff...
+.DS_Store
+# manpage build stuff...
+docs/man/man1/ansible*.1
+docs/man/man1/ansible*.1.asciidoc.in
+docs/man/man3/*
+# Vim swap files
+*.swp
+*.swo
+[._]*.un~
+credentials.yml
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+venv
+env
+Vagrantfile
+.vagrant
+# Backwards compatibility with `stable-2.9` and earlier branches.
+# Also used in the `devel` branch during early Ansible 2.10 development.
+/lib/ansible.egg-info/
+# First used in the `devel` branch during Ansible 2.10 development.
+/lib/ansible_base.egg-info/
+# First used in the `devel` branch during Ansible 2.11 development.
+/lib/ansible_core.egg-info/
+# vendored lib dir
+lib/ansible/_vendor/*
+!lib/ansible/_vendor/__init__.py
+# test stuff
+/test/integration/cloud-config-*.*
+!/test/integration/cloud-config-*.*.template
+.python-version
+# Release directory
+packaging/release/ansible_release
+/.cache/
+/test/results/
+/test/integration/cloud-config-aws.yml
+/test/integration/inventory.networking
+/test/integration/inventory.winrm
+/test/integration/cloud-config-aws.yml
+/test/integration/cloud-config-cs.ini
+# python 'rope' stuff
+.ropeproject
+# local 'ack' config files
+.ackrc
+# default 'coverage html' results
+htmlcov/
+# default 'coverage' tool data
+.coverage
+# ansible-test coverage results
+test/units/.coverage.*
+/test/integration/cloud-config-azure.yml
+/SYMLINK_CACHE.json
+changelogs/.plugin-cache.yaml
+.ansible-test-timeout.json
+# Normal rules (sorted alphabetically)
+#
+.*
+*.a
+*.asn1.[ch]
+*.bin
+*.bz2
+*.c.[012]*.*
+*.dt.yaml
+*.dtb
+*.dtbo
+*.dtb.S
+*.dtbo.S
+*.dwo
+*.elf
+*.gcno
+*.gz
+*.i
+*.ko
+*.lex.c
+*.ll
+*.lst
+*.lz4
+*.lzma
+*.lzo
+*.mod
+*.mod.c
+*.o
+*.o.*
+*.patch
+*.rmeta
+*.rpm
+*.rsi
+*.s
+*.so
+*.so.dbg
+*.su
+*.symtypes
+*.symversions
+*.tab.[ch]
+*.tar
+*.xz
+*.zst
+Module.symvers
+dtbs-list
+modules.order
+
+#
+# Top-level generic files
+#
+/linux
+/modules-only.symvers
+/vmlinux
+/vmlinux.32
+/vmlinux.map
+/vmlinux.symvers
+/vmlinux-gdb.py
+/vmlinuz
+/System.map
+/Module.markers
+/modules.builtin
+/modules.builtin.modinfo
+/modules.nsdeps
+
+#
+# RPM spec file (make rpm-pkg)
+#
+/rpmbuild/
+
+#
+# Debian directory (make deb-pkg)
+#
+/debian/
+
+#
+# Snap directory (make snap-pkg)
+#
+/snap/
+# tar directory (make tar*-pkg)
+#
+/tar-install/
+
+#
+# We don't want to ignore the following even if they are dot-files
+#
+!.clang-format
+!.cocciconfig
+!.editorconfig
+!.get_maintainer.ignore
+!.gitattributes
+!.gitignore
+!.kunitconfig
+!.mailmap
+!.rustfmt.toml
+
+#
+# Generated include files
+#
+/include/config/
+/include/generated/
+/arch/*/include/generated/
+
+# stgit generated dirs
+patches-*
+
+# quilt's files
+patches
+series
+
+# ctags files
+tags
+TAGS
+
+# cscope files
+cscope.*
+ncscope.*
+# gnu global files
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+
+# id-utils files
+ID
+
+*.orig
+*~
+\#*#
+
+#
+# Leavings from module signing
+#
+extra_certificates
+signing_key.pem
+signing_key.priv
+signing_key.x509
+x509.genkey
+
+# Kconfig presets
+/all.config
+/alldef.config
+/allmod.config
+/allno.config
+/allrandom.config
+/allyes.config
+
+# Kconfig savedefconfig output
+/defconfig
+
+# Kdevelop4
+*.kdev4
+
+# Clang's compilation database file
+/compile_commands.json
+# Documentation toolchain
+sphinx_*/
+
+# Rust analyzer configuration
+/rust-project.json
